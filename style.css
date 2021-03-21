@@ -66,7 +66,7 @@ h2 {
     height: 130px;
     border-radius: 50%;
     color: #fff;
-    font-size: 120px;
+    font-size: 150px;
     cursor: pointer;
 }
 
@@ -185,25 +185,11 @@ h2 {
     h2 {
         font-size: 30px;
     }
-
-    #initiate {
-        width: 100px;
-        height: 100px;
-        top: 40%;
-        font-size: 30px;
-    }
 }
 
 @media(max-height: 670px) {
     .card {
         top: 85%
-    }
-
-    #initiate {
-        width: 100px;
-        height: 100px;
-        top: 40%;
-        font-size: 30px;
     }
 
     h1 {
