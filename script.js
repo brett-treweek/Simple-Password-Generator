@@ -28,7 +28,7 @@ var numDiv = document.getElementById("numDiv");
 var symDiv = document.getElementById("symDiv");
 var passLength = document.getElementById("passLength");
 
-// Initiate button click function
+// Initiate play icon function, clear checkboxes, hide play icon
 initiate.addEventListener("click", go);
 
 function go(e) {
@@ -153,7 +153,7 @@ submit.addEventListener("click", () => {
     return pass;
 }
 
-// Copy password to clipboard
+// Copy password to clipboard and give alert confirmation
 var copy = document.getElementById("copy");
 
 copy.addEventListener("click", () => {

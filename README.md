@@ -7,7 +7,7 @@
 
 - The client specifically requested that the app produce a series of prompts for the user to input password criteria before generating the password on the page or as an alert.  
 
-Below is the list of criteria; 
+Below is the list of criteria 
 1. Uppercase letters.  
 2. Lowercase letters.  
 3. Numbers.  

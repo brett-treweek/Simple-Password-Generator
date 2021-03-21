@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
 font-family: 'Arsenal', sans-serif;
 background: linear-gradient(-45deg,#C31DCE, #3849A8);
@@ -56,7 +57,7 @@ h2 {
     transition: opacity 0.5s ease;
 }
 
-/* Go button */
+/* Play Icon */
 #initiate {
     position: fixed;
     top: 37%;
