@@ -1,0 +1,213 @@
+/* Universal Styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Arsenal', sans-serif;
+background: linear-gradient(-45deg,#C31DCE, #3849A8);
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+min-height: 100vh;
+}
+
+/* Main heading */
+h1 {
+    text-transform: uppercase;
+    position: fixed;
+    top: 20%;
+    font-size: 65px;
+    padding: 20px;
+    max-width: 90vw;
+    color: #fff;
+    font-weight: 100 ;
+}
+
+/* Pop-up headings */
+h2 {
+    font-size: 30px;
+    font-weight: 100;
+
+}
+
+/* Pop-up boxes */
+.criteria {
+    display: none;
+    position: fixed;
+    top: 37%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:transparent;
+    color: #fff;
+    font-weight: 50;
+    width: 300px;
+    max-width: 95%;
+    height: 150px;
+    padding: 10px 20px ;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(54, 50, 50, 0.9);
+    transition: opacity 0.5s ease;
+}
+
+/* Go button */
+#initiate {
+    position: fixed;
+    top: 37%;
+    background:transparent;
+    border: transparent 2px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 120px;
+    cursor: pointer;
+}
+
+#initiate:hover {
+    color: #23a6d5;
+}
+
+/* Yes/No buttons */
+.yesNo {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 25px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 60px;
+    height: 40px;
+}
+
+.yesNo:hover {
+    background-color: #23a6d5;
+}
+
+/* Password and clipboard icon */
+.card {
+    position: fixed;
+    top: 70%;
+    opacity: 0;
+    width: 500px;
+    max-width: 90%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Password */
+#password {
+    font-size: 20px;
+    text-align: center;
+    width: 450px;
+    height: 3rem;
+    color: black;
+    border-radius: 4px;
+    border: none;
+    margin-right: 5px;
+}
+
+/* Clipboard */
+#copy {
+    font-size: 37px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#copy:hover {
+    color:#23a6d5;
+}
+
+/* Range slider */
+#range {
+    margin: 10px 0;
+}
+
+/* Generate button */
+#submit {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+}
+
+#submit:hover {
+    background-color: #23a6d5;
+}
+
+/* Hidden checkbox */
+.checked {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: solid 1px #eee;
+}
+
+.wrapper {
+    display: none;
+    box-sizing: border-box;
+    background-color: lightseagreen;
+    padding: 2rem;
+    border: none;
+    width: 50vw;   
+}
+
+/* media queries */
+@media(max-width: 940px) {
+    h1 {
+        font-size: 37px;
+        top: 15%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #initiate {
+        width: 100px;
+        height: 100px;
+        top: 40%;
+        font-size: 30px;
+    }
+}
+
+@media(max-height: 670px) {
+    .card {
+        top: 85%
+    }
+
+    #initiate {
+        width: 100px;
+        height: 100px;
+        top: 40%;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 37px;
+        top: 15%;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+  </head>
+
+  <body>
+
+    <h1>Password Generator</h1>
+    <button id="initiate" id="initiate"><i class="far fa-play-circle"></i></button>
+  
+    <div class="criteria" id="passLength">
+      <h2>5. Passsword Length</h2>
+      <input type="range" id="range" min="8" max="128">
+      <label for="range">74</label>
+      <button id="submit">Generate</button>
+    </div>
+
+    <div class="criteria" id="upperDiv">
+      <h2>1. Include Uppercase</h2>
+      <button class="yesNo" id="yesUCase">Yes</button>
+      <button class="yesNo" id="noUCase">No</button>
+    </div>
+
+    <div class="criteria" id="lowerDiv">
+      <h2>2. Include Lowercase</h2>
+      <button class="yesNo" id="yesLCase">Yes</button>
+      <button class="yesNo" id="noLCase">No</button>
+    </div>
+
+    <div class="criteria" id="numDiv">
+      <h2>3. Include Numbers</h2>
+      <button class="yesNo" id="yesNumbers">Yes</button>
+      <button class="yesNo" id="noNumbers">No</button>
+    </div>
+
+    <div class="criteria" id="symDiv">
+      <h2>4. Include Symbols</h2>
+      <button class="yesNo" id="yesSymbols">Yes</button>
+      <button class="yesNo" id="noSymbols">No</button>
+    </div>
+
+    <div class="card" id="card">
+      <input readonly type="text" id="password">
+      <button class="btn" id="copy"><i class="far fa-clipboard"></i></button>
+    </div>
+
+    <!-- hidden checkboxes -->
+    <div class="wrapper">
+      <div class="checked">
+        <label for="p-uppercase">Include Uppercase</label>
+        <input type="checkbox" class="checkbox" id="p-uppercase">
+      </div>
+
+      <div class="checked">
+        <label for="p-lowercase">Include Lowercase</label>
+        <input type="checkbox" class="checkbox" id="p-lowercase">
+      </div>
+
+      <div class="checked">
+        <label for="p-number">Include Number</label>
+        <input type="checkbox" class="checkbox" id="p-number">
+      </div>
+
+      <div class="checked">
+        <label for="p-symbol">Include Symbols</label>
+        <input type="checkbox" class="checkbox" id="p-symbol">
+      </div>
+    </div>
+
+
+    <script src="script.js" ></script>
+
+  </body>
+</html>
