@@ -1,9 +1,9 @@
 // Password length
-const range = document.getElementById("range");
+var range = document.getElementById("range");
 
 range.addEventListener("input", (e) => {
-    const value = +e.target.value
-    const label = e.target.nextElementSibling
+    var value = +e.target.value
+    var label = e.target.nextElementSibling
     label.innerHTML = value
 })
 

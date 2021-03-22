@@ -1,6 +1,6 @@
-# 03 JavaScript: Password Generator
+# JavaScript: Password Generator
 
-![Alt text](./assets/images/Capture.PNG)
+![Alt text](./assets/images/screenshot.png)
 
 ## Client Requirements
 - This project involved creating a web application that can be used by the client to produce secure, random passwords for its employees.  
